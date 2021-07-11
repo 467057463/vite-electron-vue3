@@ -1,5 +1,6 @@
 <template >
   <div class="app">
+    <el-button type="primary">按钮</el-button>
     <navigator />
     <router-view> </router-view>
   </div>
@@ -12,7 +13,7 @@ import Navigator from '/@/components/HomeNavigator.vue'
 export default defineComponent({
   components: {
     Navigator
-  },
+  }
 })
 </script>
 

@@ -15,9 +15,9 @@ async function main() {
   initialize(logger)
   app.whenReady().then(() => {
     const main = createWindow()
-    const [x, y] = main.getPosition()
-    const side = createSecondWindow()
-    side.setPosition(x + 800 + 5, y)
+    // const [x, y] = main.getPosition()
+    // const side = createSecondWindow()
+    // side.setPosition(x + 800 + 5, y)
   })
   // thread_worker example
   createBaseWorker({ workerData: 'worker world' }).on('message', (message) => {
