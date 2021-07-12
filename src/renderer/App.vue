@@ -1,20 +1,15 @@
-<template >
-  <div class="app">
-    <el-button type="primary">按钮</el-button>
-    <navigator />
-    <router-view> </router-view>
-  </div>
+<template lang="pug">
+.app
+  router-link(to="/") 首页
+  router-link(to="/about") about
+  router-link(to="/view") webview
+  router-view
 </template>
 
-<script lang=ts>
-import { defineComponent } from 'vue'
-import Navigator from '/@/components/HomeNavigator.vue'
-
-export default defineComponent({
-  components: {
-    Navigator
-  }
-})
+<script setup lang="ts">
+import { ref } from 'vue'
+const test1 = 'test'
+const test = ref(0)
 </script>
 
 <style>
